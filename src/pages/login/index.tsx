@@ -32,7 +32,7 @@ export default function Login() {
                </View>
             </View>
             <View style={styles.boxBottom}>
-                <Text>Bottom parou 28:07 </Text>
+                <Text>Bottom parou 38:07 </Text>
             </View>
         </View>
 
