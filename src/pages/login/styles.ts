@@ -13,8 +13,6 @@ export const styles = StyleSheet.create({
         width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
-
-       // backgroundColor: '#ff0000',
         
     },
     boxMid: {
@@ -26,9 +24,8 @@ export const styles = StyleSheet.create({
     boxBottom: {
         height:Dimensions.get('window').height / 3,
         width: '100%',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: 'blue',
+       alignItems: 'center',
+
     },
     logo:{
         width: 80,
@@ -62,5 +59,36 @@ export const styles = StyleSheet.create({
         height: '100%',
         width: '90%',
         borderRadius:40,
-    }
+        paddingLeft:8,
+    },
+    button:{
+        width: 280,
+        height: 50,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 40,
+        marginTop: 40,
+        backgroundColor: themes.colors.primary,
+
+        shadowColor: "#000",
+        shadowOffset: {
+	      width: 0,
+	      height: 12,
+        },
+        shadowOpacity: 0.58,
+        shadowRadius: 16.00,
+
+        elevation: 20,
+        },
+        textButton:{
+        color: '#fff',
+        fontWeight: 'bold',
+        fontSize: 16,
+       
+    },
+    textBottom:{
+        fontSize: 16,
+        color: themes.colors.gray,
+    },
+    
 });
