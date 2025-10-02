@@ -38,57 +38,13 @@ export const styles = StyleSheet.create({
         fontSize: 18,
         
     },
-    titleImput:{
-        marginLeft: 5,
-        color:themes.colors.gray,
-        marginTop: 20,
-    },
-    BoxInput:{
-        width: '100%',
-        height: 40,
-        borderWidth: 1,
-        borderRadius:40,
-        marginTop:10,
-        flexDirection: 'row',
-        alignItems: 'center',
-       paddingHorizontal: 5,
-       backgroundColor: themes.colors.tgScreen,
-       borderColor:themes.colors.tgScreen
-    },
-    input: {
-        height: '100%',
-        width: '90%',
-        borderRadius:40,
-        paddingLeft:8,
-    },
-    button:{
-        width: 280,
-        height: 50,
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderRadius: 40,
-        marginTop: 40,
-        backgroundColor: themes.colors.primary,
-
-        shadowColor: "#000",
-        shadowOffset: {
-	      width: 0,
-	      height: 12,
-        },
-        shadowOpacity: 0.58,
-        shadowRadius: 16.00,
-
-        elevation: 20,
-        },
-        textButton:{
-        color: '#fff',
-        fontWeight: 'bold',
-        fontSize: 16,
-       
-    },
     textBottom:{
         fontSize: 16,
         color: themes.colors.gray,
-    },
+    }
+       
+     
+  
+  
     
 });
