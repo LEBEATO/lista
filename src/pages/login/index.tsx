@@ -7,13 +7,17 @@ import { themes } from '../../global/themes';
 import { useState } from 'react';
 import { Input } from '../../components/input';
 import { Button } from '../../components/Button';
+import { useNavigation,NavigationProp } from '@react-navigation/native';
+
 
 
 
 
 export default function Login() {
-     const [email, setEmail] = useState('');
-     const [password, setPassword] = useState('');
+    const navigation = useNavigation<NavigationProp<any>>();
+
+     const [email, setEmail] = useState('a');
+     const [password, setPassword] = useState('a');
      const [showpassword, setShowPassword] = useState(true);
      const [loading,setLoading] = useState(false);
 
@@ -24,6 +28,10 @@ export default function Login() {
          if(!email || !password){ 
           return Alert.alert('Atenção','Preencha todos os campos corretamente')
          }
+
+         navigation.navigate('BottomRoutes')
+
+
          setTimeout(()=>{
           if(email == 'alexandrebeato2018@gmail.com' && password == '12345678'){
                  Alert.alert('Login efetuado com sucesso')
@@ -38,6 +46,8 @@ export default function Login() {
       }catch (error) {
         console.log('erro')
         
+      }finally{
+        setLoading(false)
       }
         
       
@@ -52,7 +62,7 @@ export default function Login() {
            style={styles.logo}
            
            />
-           <Text style={styles.text}>Bem vindo de volta!</Text>
+           <Text style={styles.text}>Bem vindo de volta! 3vidio 19:52</Text>
         </View>
             <View style={styles.boxMid}>
               <Input 
